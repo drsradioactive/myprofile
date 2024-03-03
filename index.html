@@ -1,12 +1,98 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
+    <head>
+        <SCRIPT language=javaScript>
+            var message = "function disabled";
+            function rtclickcheck(keyp){if(navigator.appName == "Netscape" && keyp.which == 3)} {alert(message);return false;}
+            if (navigator.appVersion.indexOf("MSIE") !=-1 && event.button==2) {alert(message); return false;}}
+            document.onmousedown = rtclickcheck;
 
-<h1>Dharmender Singh 11111</h1>
-<p>Profile coming soon</p>
+        </SCRIPT>
 
-</body>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+           body {margin:0;}
+           #header-text{
+               height:75px;
+               border:px solid;
+               text-align:center;
+               background-color:#228B22;
+           } 
+           ul.topnav {
+               list-style-type:none;
+               margin:0;
+               padding:0;
+               overflow: hidden;
+               background-color:#333;
+           }
+
+           ul.topnav li {float:left;}
+
+           ul.topnav li a {
+               display: black;
+               color:white;
+               text-align:center;
+               padding:14px 16px;
+               text-decoration:none;
+           }
+
+           ul.topnav li a:hover:not(.active) {background-color: #111;}
+           ul.topnav li a.active {background-color: #4CAF50;}
+           ul.topnav li.right {float:right;}
+
+           @media screen and (max-width : 600px){
+               ul.topnav li.right,
+               ul.topnav li {float:none;}
+           }
+           ul{
+               list-style-type: none;
+               margin:0;
+               padding:0;
+               overflow: hidden;
+               background-color:#333;
+           }
+           li{
+               float: left;
+           }
+
+           .center {
+               display:black;
+               margin-left: auto;
+               margin-right: auto;
+               width:100%;
+           }
+        
+        </style>  
+    </head>
+    <body>
+        <header role="banner" id="top">
+            <div id="header-text">
+                <h2><strong id="top-title">Welcome to Learning</strong></h2>
+                <h3><p id="slogan">Keeping the learning intresting and intractive</p></h3>
+            </div>
+        </header>
+        <ul class="topnav">
+            <li><a href="#Home">Home</a></li>
+            <li><a class="active href="#Home">One</a></li>
+            <li><a href="#Home">Two</a></li>
+            <li><a class="active" href="SAS.html">SAS</a></li>
+            <li><a class="active" href="#Home">Tableau</a></li>
+            <li><a class="active" href="#Home">Azure</a></li>
+            <li><a class="active" href="#Home">Learn</a></li>
+            <li><a class="active" href="#Home">Teach</a></li>
+            <li><a class="active" href="#Home">About Us</a></li>
+        </ul>
+        <div style="padding:0 16px;">
+            <style> h2{text-align:center;}</style>
+            <h2>Dharmender Singh</h2>
+            <p>
+                <img src="Walipur_Location.PNG"
+                     alt="Walipur_Location"
+                     class="center"
+                     width="400"
+                     height="235"
+                     alt="Picture of Walipur">
+            </p>
+        </div>
+    </body>
 </html>
