@@ -1,45 +1,54 @@
-/* style.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-header, footer {
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.banner {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 1em;
+    padding: 20px 0;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center; /* Align the list items horizontally */
-}
-
-nav ul li {
-    display: inline-block; /* Display list items horizontally */
-    margin: 0 10px; /* Adjust spacing between list items */
-}
-
-nav ul li a {
-    color: black;
-    text-decoration: none;
-    padding: 10px 20px; /* Add padding for better clickability */
-    border-radius: 5px; /* Add some roundness to the edges */
-    background-color: #f0f0f0; /* Add background color */
-}
-
-nav ul li a:hover {
-    background-color: #ddd; /* Change background color on hover */
+.banner h2 {
+    margin: 0;
 }
 
 main {
     padding: 20px;
 }
 
-h1 {
-    color: #333;
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
 }
