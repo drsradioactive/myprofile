@@ -25,36 +25,20 @@ nav li {
     margin: 0 15px;
 }
 nav a {
-    color: white; /* Ensuring text is readable on blue background */
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
 nav a:hover {
     text-decoration: underline;
 }
-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    display: block;
-    text-align: center;
-    margin: 20px auto;
-}
-button:hover {
-    background-color: #0056b3;
-}
 .container {
-    max-width: 1000px;
-    margin: 50px auto;
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 90%;
 }
 h1 {
     text-align: center;
@@ -77,4 +61,13 @@ a {
 }
 a:hover {
     text-decoration: underline;
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #007bff;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
