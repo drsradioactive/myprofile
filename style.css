@@ -25,7 +25,7 @@ nav li {
     margin: 0 15px;
 }
 nav a {
-    color: white; /* This ensures text is readable on a blue background */
+    color: white; /* Ensuring text is readable on blue background */
     text-decoration: none;
     font-weight: bold;
 }
