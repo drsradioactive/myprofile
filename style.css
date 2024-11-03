@@ -25,73 +25,7 @@ nav li {
     margin: 0 15px;
 }
 nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-nav a:hover {
-    text-decoration: underline;
-}
-.container {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-h1 {
-    text-align: center;
-    color: #007bff;
-}
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-li {
-    background: #f0f0f0;
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
-
-/* Add these styles to your existing style.css */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-header h1 {
-    text-align: center;
-    color: #007bff;
-    margin: 20px 0;
-}
-nav {
-    background-color: #007bff;
-    padding: 10px 0;
-    text-align: center;
-}
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-nav li {
-    display: inline;
-    margin: 0 15px;
-}
-nav a {
-    color: white;
+    color: white; /* This ensures text is readable on a blue background */
     text-decoration: none;
     font-weight: bold;
 }
@@ -110,7 +44,6 @@ button {
     text-align: center;
     margin: 20px auto;
 }
-
 button:hover {
     background-color: #0056b3;
 }
@@ -145,4 +78,3 @@ a {
 a:hover {
     text-decoration: underline;
 }
-
