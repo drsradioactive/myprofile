@@ -1,71 +1,64 @@
-/* Reset default margin and padding */
-body, h1, h2, h3, p {
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
     margin: 0;
     padding: 0;
 }
-
-/* Set background color and font styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-}
-
-/* Header styles */
-header {
-    background-color: #333;
-    color: #fff;
+header h1 {
     text-align: center;
-    padding: 20px 0;
+    color: #007bff;
+    margin: 20px 0;
 }
-
-/* Navigation styles */
+nav {
+    background-color: #007bff;
+    padding: 10px 0;
+    text-align: center;
+}
 nav ul {
     list-style-type: none;
-    display: flex;
-    justify-content: center;
-    background-color: #444;
-    padding: 10px 0;
+    margin: 0;
+    padding: 0;
 }
-
-nav ul li {
-    margin-right: 20px;
+nav li {
+    display: inline;
+    margin: 0 15px;
 }
-
-nav ul li a {
+nav a {
+    color: white;
     text-decoration: none;
-    color: #fff;
     font-weight: bold;
 }
-
-/* Main content container */
+nav a:hover {
+    text-decoration: underline;
+}
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 800px;
+    margin: 50px auto;
     padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-/* About Me section */
-.about-me {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.about-me h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.about-me p {
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-/* Footer styles */
-footer {
+h1 {
     text-align: center;
-    padding: 20px 0;
-    background-color: #333;
-    color: #fff;
+    color: #007bff;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    background: #f0f0f0;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
 }
