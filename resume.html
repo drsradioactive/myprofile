@@ -3,58 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dharmender Singh's Resume</title>
-    <button onclick="history.back()">Back</button>
+    <title>Dharmender Singh</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
         }
-        .resume {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2em;
+        header, nav, footer {
             text-align: center;
-            color: #007bff;
+            padding: 1em;
         }
-        header p {
-            text-align: center;
-            margin: 5px 0;
-        }
-        section h2 {
-            color: #007bff;
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 5px;
-        }
-        ul {
+        nav ul {
             list-style-type: none;
             padding: 0;
         }
-        li {
-            margin-bottom: 10px;
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
         }
-        a {
-            color: #007bff;
-            text-decoration: none;
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1em;
         }
-        a:hover {
-            text-decoration: underline;
+        @media (max-width: 600px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+            .container {
+                padding: 0.5em;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="resume">
+    <header>
+        <h1>Dharmender Singh</h1>
+        <p>📞 9740906000 | <a href="https://www.linkedin.com/in/dhsinghnavish" target="_blank">LinkedIn</a> | <a href="https://github.com/drsradioactive" target="_blank">GitHub</a> | 📧 <a href="mailto:dharmender.singh83@gmail.com" target="_blank">Email</a> </p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="certification.html">Certification</a></li>
+            <li><a href="books.html">Books</a></li>
+        </ul>
+    </nav>
+    <div class="container">
         <header>
             <h1>Dharmender Singh</h1>
             <p>📞 9740906000 | <a href="https://www.linkedin.com/in/dhsinghnavish">LinkedIn</a> | <a href="https://github.com/drsradioactive">GitHub</a> | 📧 <a href="mailto:dharmender.singh83@example.com">Email</a> | 🌐 <a href="http://singhdharmender.com">Website</a> | Bangalore, India</p>
