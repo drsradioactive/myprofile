@@ -34,13 +34,15 @@
             list-style-type: none;
             border: 1px solid #ccc;
             z-index: 1000;
+            white-space: nowrap; /* Ensure the sub-menu items are on a single line */
         }
         nav ul li:hover ul {
-            display: block;
+            display: flex; /* Use flexbox to align items horizontally */
+            justify-content: center;
         }
         nav ul li ul li {
-            display: block;
-            margin: 0;
+            display: inline;
+            margin: 0 10px;
         }
         .container {
             max-width: 800px;
@@ -54,6 +56,8 @@
             }
             nav ul li ul {
                 position: static;
+                display: flex; /* Ensure the sub-menu items are flex items */
+                flex-direction: column; /* Stack sub-menu items vertically on small screens */
             }
             .container {
                 padding: 0.5em;
