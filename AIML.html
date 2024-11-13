@@ -1,1 +1,111 @@
-AIML.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dharmender Singh</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, footer {
+            text-align: center;
+            padding: 1em;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+            position: relative;
+        }
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            padding: 10px;
+            list-style-type: none;
+            border: 1px solid #ccc;
+            z-index: 1000;
+            white-space: nowrap; /* Ensure the sub-menu items are on a single line */
+        }
+        nav ul li:hover ul {
+            display: flex; /* Use flexbox to align items horizontally */
+            justify-content: center;
+        }
+        nav ul li ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1em;
+        }
+        @media (max-width: 600px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+            nav ul li ul {
+                position: static;
+                display: flex; /* Ensure the sub-menu items are flex items */
+                flex-direction: column; /* Stack sub-menu items vertically on small screens */
+            }
+            .container {
+                padding: 0.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dharmender Singh</h1>
+        <p>📞 9740906000 | <a href="https://www.linkedin.com/in/dhsinghnavish" target="_blank">LinkedIn</a> | <a href="https://github.com/drsradioactive" target="_blank">GitHub</a> | 📧 <a href="mailto:dharmender.singh83@gmail.com" target="_blank">Email</a> </p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">About Me</a></li>
+            <li>
+                <a href="#">Projects</a> <!-- Removed /Projects.html from the URL -->
+                <ul>
+                    <li><a href="AIML.html">AIML</a></li>
+                    <li><a href="Cloud.html">Cloud Migration</a></li>
+                    <li><a href="DataEngg.html">Data Engineering and Analytics</a></li>
+                    <li><a href="Blockchain.html">Blockchain</a></li>
+                    <li><a href="Mainframe.html">Mainframe Modernization</a></li>
+                    <li><a href="SRE.html">SRE</a></li>
+                </ul>
+            </li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="certification.html">Certification</a></li>
+            <li><a href="Skills.html">Skills</a></li>
+            <li><a href="books.html">Books</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <p>👋 Hi there! </p>
+        <p> I'm an experienced data engineer and analytics professional, with a strong background in Data pipeline creation, optimization, statistical modeling, data visualization, and machine learning. Proficient in SAS, Python, and Azure cloud solutions. A passion for team leadership and mentoring, fostering innovation, and delivering impactful solutions using data to drive business decisions.</p>
+        <p>My passion lies in leveraging data to drive <strong>impactful solutions</strong> that shape business decisions. Here's what I bring to the table: </p>
+        <ul>
+            <li><strong>Data Engineering and Analytics:</strong> I specialize in creating robust data pipelines, optimizing processes, and building statistical models.</li>
+            <li><strong>Visualization Mastery:</strong> I transform complex data into clear insights through compelling visualizations.</li>
+            <li><strong>Machine Learning Enthusiast:</strong> I love exploring machine learning algorithms and applying them to real-world problems.</li>
+            <li><strong>Tech Stack:</strong> Proficient in <strong>SAS</strong>, <strong>Python</strong>, and <strong>Azure cloud solutions</strong>.</li>
+            <li><strong>Leadership and Mentorship:</strong> I thrive on fostering innovation within teams and mentoring aspiring data professionals.</li>
+        </ul>
+        <a href="https://github.com/drsradioactive/Resume/blob/main/Dharmender%20Singh_Data_Engg_Exp_17_Years_SAS_Azure_Mainframe%20Modernization.docx.pdf" target="_blank">Resume</a>
+        <p>Let's connect (📞 +91-9740906000 or dharmender.singh83@gmail.com) and make data work for you!  🚀</p>
+    </div>
+    <footer>
+        &copy; 2024 Dharmender Singh
+    </footer>
+</body>
+</html>
