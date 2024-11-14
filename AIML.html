@@ -10,30 +10,30 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            padding-top: 100px; /* Padding to offset the fixed nav */
+            overflow: hidden; /* Prevent scrolling on the body */
         }
         header, nav, footer {
             text-align: center;
             padding: 1em;
         }
-
-        nav { position: fixed; /* Fix the nav at the top */ 
-             top: 0; width: 100%; 
-             background-color: #fff; 
-             z-index: 1000; /* Ensure nav stays on top */ 
-             border-bottom: 1px solid #ccc; 
+        nav {
+            position: fixed; /* Fix the nav at the top */
+            top: 0;
+            width: 100%;
+            background-color: #fff;
+            z-index: 1000; /* Ensure nav stays on top */
+            border-bottom: 1px solid #ccc;
         }
-        
         nav ul {
             list-style-type: none;
             padding: 0;
+            margin: 0;
         }
         nav ul li {
             display: inline;
             margin: 0 10px;
             position: relative;
         }
-        
         nav ul li ul {
             display: none;
             position: absolute;
@@ -44,10 +44,10 @@
             list-style-type: none;
             border: 1px solid #ccc;
             z-index: 1000;
-            white-space: nowrap; /* Ensure the sub-menu items are on a single line */
+            white-space: nowrap;
         }
         nav ul li:hover ul {
-            display: flex; /* Use flexbox to align items horizontally */
+            display: flex;
             justify-content: center;
         }
         nav ul li ul li {
@@ -58,6 +58,9 @@
             max-width: 80%;
             margin: 0 auto;
             padding: 1em;
+            overflow-y: auto; /* Enable vertical scrolling */
+            height: calc(100vh - 200px); /* Adjust height to fit within the viewport minus the nav and footer */
+            padding-top: 120px; /* Adjust padding to avoid overlap with fixed nav */
         }
         @media (max-width: 600px) {
             nav ul li {
@@ -66,11 +69,12 @@
             }
             nav ul li ul {
                 position: static;
-                display: flex; /* Ensure the sub-menu items are flex items */
-                flex-direction: column; /* Stack sub-menu items vertically on small screens */
+                display: flex;
+                flex-direction: column;
             }
             .container {
                 padding: 0.5em;
+                padding-top: 120px; /* Adjust padding to avoid overlap with fixed nav */
             }
         }
     </style>
@@ -84,7 +88,7 @@
         <ul>
             <li><a href="home.html">About Me</a></li>
             <li>
-                <a href="#">Projects</a> <!-- Removed /Projects.html from the URL -->
+                <a href="#">Projects</a>
                 <ul>
                     <li><a href="AIML.html">AIML</a></li>
                     <li><a href="Cloud.html">Cloud Migration</a></li>
@@ -103,41 +107,37 @@
     <div class="container">
         <p>👋 AIML Projects </p>   
         <ul>
-            <li><strong>Project : Face Mask Prediction using U-Net,Advanced Computer Vision:</strong></li>
-            <p>The goal is to build a deep learning model using U-Net as architecture that will learn  the pixel mapping of the face in an image </p>
-            <p><strong>Skills & Tools Covered </strong> Computer Vision , CNN , Transfer Learning , Object detection & Segmentation </p>
+            <li><strong>Project : Face Mask Prediction using U-Net, Advanced Computer Vision:</strong></li>
+            <p>The goal is to build a deep learning model using U-Net as architecture that will learn the pixel mapping of the face in an image.</p>
+            <p><strong>Skills & Tools Covered:</strong> Computer Vision, CNN, Transfer Learning, Object Detection & Segmentation</p>
             <a href="https://github.com/drsradioactive/Machine-Learning-and-Deep-Learning/blob/main/README.md" target="_blank">Project Code</a>
 
-            <li><strong>Project : Sentiment analysis using Sequence Models in NLP:</strong></li>
-            <p>The objective of this project is to build a text classification model which analyses the customer's sentiments based on their reviews in the IMDB database.
-               The model uses a complex deep learning model to build an embedding layer followed by a classification algorithm to analyze the sentiment of the customers </p>
-            <p><strong>Skills & Tools Covered </strong> RNN , Word embedding , LSTM , Classification </p>
-            <a href="https://github.com/drsradioactive/Machine-Learning-and-Deep-Learning/blob/main/README.md" target="_blank">Project Code</a> 
-
-            <li><strong>Project : Predicting author features using a NLP classifier ,Statistical NLP:</strong></li>
-            <p>The project involves building an NLP classifier that predicts multiple features of the author of a given text. 
-               This is a Multi-label classification problem that can predict the label/s of the blog based on the given input text. And build a semi-rule based interactive chatbot.</p>
-            <p><strong>Skills & Tools Covered </strong> multilabel classification , Natural Language Processing , Chatbot </p>
+            <li><strong>Project : Sentiment Analysis using Sequence Models in NLP:</strong></li>
+            <p>The objective of this project is to build a text classification model which analyzes the customer's sentiments based on their reviews in the IMDB database.
+               The model uses a complex deep learning model to build an embedding layer followed by a classification algorithm to analyze the sentiment of the customers.</p>
+            <p><strong>Skills & Tools Covered:</strong> RNN, Word Embedding, LSTM, Classification</p>
             <a href="https://github.com/drsradioactive/Machine-Learning-and-Deep-Learning/blob/main/README.md" target="_blank">Project Code</a>
 
-            <li><strong>Project : Predicting plant species using CNN ,Computer Vision with CNNs:</strong></li>
-            <p>The first part of the project involves building a CNN classifier in order to identify the type of species of given plant/crop seedlings and discuss why CNN perform better than NN for image dataset.
-                The second part involves configuring the image data using given images. </p>
-            <p><strong>Skills & Tools Covered </strong> Convolution , Neural Network , Keras , Computer Vision </p>
+            <li><strong>Project : Predicting Author Features using an NLP Classifier, Statistical NLP:</strong></li>
+            <p>The project involves building an NLP classifier that predicts multiple features of the author of a given text.
+               This is a multi-label classification problem that can predict the labels of the blog based on the given input text, and also build a semi-rule-based interactive chatbot.</p>
+            <p><strong>Skills & Tools Covered:</strong> Multi-label Classification, Natural Language Processing, Chatbot</p>
             <a href="https://github.com/drsradioactive/Machine-Learning-and-Deep-Learning/blob/main/README.md" target="_blank">Project Code</a>
 
-            <li><strong>Project : Implementing a Image classification neural network to classify Street House View Numbers,Neural Networks & Deep Learning:</strong></li>
-            <p>SVHN is a real-world image dataset for developing object recognition algorithms with a requirement on data formatting but comes from a significantly harder, 
-                unsolved, real-world problem (recognizing digits and numbers in natural scene images). SVHN is obtained from house numbers in Google Street View images. 
-                The objective of the project is to learn how to implement a simple image classification pipeline based on the k-Nearest Neighbour and a deep neural network. </p>
-            <p><strong>Skills & Tools Covered </strong> Neural Networks , Deep Learning , Keras , Image Recognition </p>
+            <li><strong>Project : Predicting Plant Species using CNN, Computer Vision with CNNs:</strong></li>
+            <p>The first part of the project involves building a CNN classifier to identify the species of given plant/crop seedlings and discuss why CNNs perform better than NNs for image datasets.
+                The second part involves configuring the image data using given images.</p>
+            <p><strong>Skills & Tools Covered:</strong> Convolution, Neural Network, Keras, Computer Vision</p>
             <a href="https://github.com/drsradioactive/Machine-Learning-and-Deep-Learning/blob/main/README.md" target="_blank">Project Code</a>
 
-
-
-
+            <li><strong>Project : Implementing an Image Classification Neural Network to Classify Street House View Numbers, Neural Networks & Deep Learning:</strong></li>
+            <p>SVHN is a real-world image dataset for developing object recognition algorithms with a requirement on data formatting but comes from a significantly harder,
+                unsolved, real-world problem (recognizing digits and numbers in natural scene images). SVHN is obtained from house numbers in Google Street View images.
+                The objective of the project is to learn how to implement a simple image classification pipeline based on the k-Nearest Neighbour and a deep neural network.</p>
+            <p><strong>Skills & Tools Covered:</strong> Neural Networks, Deep Learning, Keras, Image Recognition</p>
+            <a href="https://github.com/drsradioactive/Machine-Learning-and-Deep-Learning/blob/main/README.md" target="_blank">Project Code</a>
         </ul>
-        <p>Let's connect (📞 +91-9740906000 or dharmender.singh83@gmail.com) and make data work for you!  🚀</p>
+        <p>Let's connect (📞 +91-9740906000 or dharmender.singh83@gmail.com) and make data work for you! 🚀</p>
     </div>
     <footer>
         &copy; 2024 Dharmender Singh
