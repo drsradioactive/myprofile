@@ -10,13 +10,15 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            overflow: hidden; /* Prevent scrolling on the body */
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
         header, nav, footer {
             text-align: center;
             padding: 1em;
+            flex-shrink: 0;
         }
-        
         nav ul {
             list-style-type: none;
             padding: 0;
@@ -52,8 +54,7 @@
             margin: 0 auto;
             padding: 1em;
             overflow-y: auto; /* Enable vertical scrolling */
-            height: calc(100vh - 200px); /* Adjust height to fit within the viewport minus the nav and footer */
-            padding-top: 120px; /* Adjust padding to avoid overlap with fixed nav */
+            flex-grow: 1; /* Allow the container to grow and take up remaining space */
         }
         @media (max-width: 600px) {
             nav ul li {
@@ -67,7 +68,6 @@
             }
             .container {
                 padding: 0.5em;
-                padding-top: 120px; /* Adjust padding to avoid overlap with fixed nav */
             }
         }
     </style>
