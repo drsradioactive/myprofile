@@ -3,109 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dharmender Singh</title>
+    <title>Dharmender Singh — Engineering &amp; Technology Leader</title>
+    <meta name="description" content="Dharmender Singh — engineering and technology leader driving cloud, data, and mainframe modernization for regulated enterprises.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%230b1f3a'/%3E%3Ctext x='32' y='42' font-family='Arial' font-size='26' font-weight='700' fill='%232dd4bf' text-anchor='middle'%3EDS%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header, nav, footer {
-            text-align: center;
-            padding: 1em;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
-            position: relative;
-        }
-        nav ul li ul {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: white;
-            padding: 10px;
-            list-style-type: none;
-            border: 1px solid #ccc;
-            z-index: 1000;
-            white-space: nowrap; /* Ensure the sub-menu items are on a single line */
-        }
-        nav ul li:hover ul {
-            display: flex; /* Use flexbox to align items horizontally */
-            justify-content: center;
-        }
-        nav ul li ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 1em;
-        }
-        @media (max-width: 600px) {
-            nav ul li {
-                display: block;
-                margin: 10px 0;
-            }
-            nav ul li ul {
-                position: static;
-                display: flex; /* Ensure the sub-menu items are flex items */
-                flex-direction: column; /* Stack sub-menu items vertically on small screens */
-            }
-            .container {
-                padding: 0.5em;
-            }
-        }
-    </style>
 </head>
 <body>
-    <header>
-        <h1>Dharmender Singh</h1>
-        <p>📞 9740906000 | <a href="https://www.linkedin.com/in/dhsinghnavish" target="_blank">LinkedIn</a> | <a href="https://github.com/drsradioactive" target="_blank">GitHub</a> | 📧 <a href="mailto:dharmender.singh83@gmail.com" target="_blank">Email</a> </p>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="home.html">About Me</a></li>
-            <li>
-                <a href="#">Projects</a> <!-- Removed /Projects.html from the URL -->
+    <header class="site-header">
+        <div class="nav-inner">
+            <a class="brand" href="home.html">
+                <span class="brand-mark">DS</span>
+                <span class="brand-text">Dharmender Singh</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="site-nav" id="siteNav">
                 <ul>
-                    <li><a href="AIML.html">AIML</a></li>
-                    <li><a href="Cloud.html">Cloud Migration</a></li>
-                    <li><a href="DataEngg.html">Data Engineering and Analytics</a></li>
-                    <li><a href="Blockchain.html">Blockchain</a></li>
-                    <li><a href="Mainframe.html">Mainframe Modernization</a></li>
-                    <li><a href="SRE.html">SRE</a></li>
+                    <li><a class="active" href="home.html">About</a></li>
+                    <li><a href="resume.html">Experience</a></li>
+                    <li>
+                        <details>
+                            <summary>Projects</summary>
+                            <ul class="dropdown">
+                                <li><a href="Cloud.html">Cloud Migration</a></li>
+                                <li><a href="DataEngg.html">Data Engineering</a></li>
+                                <li><a href="Mainframe.html">Mainframe Modernization</a></li>
+                                <li><a href="SRE.html">SRE &amp; Reliability</a></li>
+                                <li><a href="AIML.html">AI / ML</a></li>
+                                <li><a href="Blockchain.html">Blockchain (Coursework)</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li><a href="Skills.html">Skills</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="certification.html">Certifications</a></li>
+                    <li><a href="books.html">Books</a></li>
                 </ul>
-            </li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="certification.html">Certification</a></li>
-            <li><a href="Skills.html">Skills</a></li>
-            <li><a href="books.html">Books</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        <p>👋 Hi there! </p>
-        <p> I'm an experienced data engineer and analytics professional, with a strong background in Data pipeline creation, optimization, statistical modeling, data visualization, and machine learning. Proficient in SAS, Python, and Azure cloud solutions. A passion for team leadership and mentoring, fostering innovation, and delivering impactful solutions using data to drive business decisions.</p>
-        <p>My passion lies in leveraging data to drive <strong>impactful solutions</strong> that shape business decisions. Here's what I bring to the table: </p>
-        <ul>
-            <li><strong>Data Engineering and Analytics:</strong> I specialize in creating robust data pipelines, optimizing processes, and building statistical models.</li>
-            <li><strong>Visualization Mastery:</strong> I transform complex data into clear insights through compelling visualizations.</li>
-            <li><strong>Machine Learning Enthusiast:</strong> I love exploring machine learning algorithms and applying them to real-world problems.</li>
-            <li><strong>Tech Stack:</strong> Proficient in <strong>SAS</strong>, <strong>Python</strong>, and <strong>Azure cloud solutions</strong>.</li>
-            <li><strong>Leadership and Mentorship:</strong> I thrive on fostering innovation within teams and mentoring aspiring data professionals.</li>
-        </ul>
-        <a href="https://github.com/drsradioactive/Resume/blob/main/Dharmender%20Singh_Data_Engg_Exp_17_Years_SAS_Azure_Mainframe%20Modernization.docx.pdf" target="_blank">Resume</a>
-        <p>Let's connect (📞 +91-9740906000 or dharmender.singh83@gmail.com) and make data work for you!  🚀</p>
-    </div>
-    <footer>
-        &copy; 2024 Dharmender Singh
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <span class="eyebrow">Engineering &amp; Technology Leader</span>
+            <h1>I modernize the systems regulated industries can't afford to get wrong.</h1>
+            <p class="lede">20+ years turning legacy mainframe and data platforms into resilient, cloud-native systems — without disrupting the business running on top of them.</p>
+            <div class="cta-row">
+                <a class="btn btn-primary" href="Dharmender_Singh_Resume.pdf" target="_blank">📄 Download Resume</a>
+                <a class="btn btn-secondary" href="mailto:dharmender.singh83@gmail.com">✉️ Email Me</a>
+                <a class="btn btn-secondary" href="https://www.linkedin.com/in/dhsinghnavish" target="_blank">LinkedIn</a>
+                <a class="btn btn-secondary" href="https://github.com/drsradioactive" target="_blank">GitHub</a>
+            </div>
+            <div class="stat-grid">
+                <div class="stat"><span class="num">20+</span><span class="label">Years in Engineering</span></div>
+                <div class="stat"><span class="num">$4.5T</span><span class="label">Assets Supported</span></div>
+                <div class="stat"><span class="num">300M+</span><span class="label">Daily API Requests</span></div>
+                <div class="stat"><span class="num">40+</span><span class="label">Engineers Led</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <span class="eyebrow" style="color:var(--teal-600)">What I Do</span>
+                <h2>Four pillars of the work</h2>
+            </div>
+            <div class="feature-grid">
+                <a class="feature-card" href="Cloud.html">
+                    <span class="icon">☁️</span>
+                    <h3>Cloud &amp; Platform Modernization</h3>
+                    <p>Migrating regulated, mission-critical systems to Azure and AKS without breaking what's already running.</p>
+                    <span class="go">Explore →</span>
+                </a>
+                <a class="feature-card" href="DataEngg.html">
+                    <span class="icon">📊</span>
+                    <h3>Data Engineering at Scale</h3>
+                    <p>Building self-service data and reporting platforms trusted by thousands of business users.</p>
+                    <span class="go">Explore →</span>
+                </a>
+                <a class="feature-card" href="SRE.html">
+                    <span class="icon">🛡️</span>
+                    <h3>Reliability &amp; AI-Driven Ops</h3>
+                    <p>Using ML and automation to catch failures before they become incidents.</p>
+                    <span class="go">Explore →</span>
+                </a>
+                <a class="feature-card" href="Mainframe.html">
+                    <span class="icon">🖥️</span>
+                    <h3>Mainframe Modernization</h3>
+                    <p>Retiring the legacy systems I once built and ran — into distributed, cloud-native replacements.</p>
+                    <span class="go">Explore →</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-tight">
+        <div class="container narrative">
+            <div class="section-title">
+                <span class="eyebrow" style="color:var(--teal-600)">My Story</span>
+                <h2>Built it, then modernized it</h2>
+            </div>
+            <p>I lead cloud-native and distributed data platforms at Fidelity Investments, supporting operations across <strong>$4.5 trillion in assets</strong>, <strong>65,000 funds</strong>, and <strong>24,000 clients</strong> — with a rare edge: I've also modernized the mainframe systems these platforms replaced, so I understand both what we're building and what we're moving away from.</p>
+            <p>I lead a global team of <strong>40+ engineers and senior managers</strong>, architecting on AKS and Azure, building distributed data platforms and APIs that serve high-volume, regulated environments, and owning that architecture end-to-end — from strategy through production support.</p>
+            <p><strong>A few things I'm proud of:</strong></p>
+            <ul class="highlight-list">
+                <li>Rebuilt and scaled API infrastructure on AKS serving <strong>300M+ daily requests</strong> and <strong>160,000 self-service users</strong>, with meaningfully better fault tolerance.</li>
+                <li>Architected distributed data and analytics reporting platforms, file transfer, and audit pipelines, handling <strong>15,000+ files and requests daily</strong> across internal and external partners.</li>
+                <li>Built an end-to-end data masking pipeline across platforms, protecting sensitive and client PII in every lower environment.</li>
+                <li>Used ML to detect anomalies and pipeline failures before they became incidents — cutting incident rates ~15% and powering fraud alerting.</li>
+                <li>Modernized legacy mainframe systems (5,000+ SAS programs, 16,000 jobs) into cloud pipelines, saving <strong>$1M+ annually</strong> with zero disruption to regulated operations.</li>
+            </ul>
+            <p>Beyond delivery, I've supported internal and external data audits, automated low-risk data changes for business teams, and trained 40+ engineers on Azure and distributed systems — because modernization only sticks if the team and the controls around it modernize together.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="closing-cta">
+                <h2>Let's connect</h2>
+                <p>Open to conversations with engineering leaders working on distributed platforms, cloud infrastructure, data/fraud analytics, or applied AI in regulated industries.</p>
+                <div class="cta-row" style="justify-content:center">
+                    <a class="btn btn-primary" href="mailto:dharmender.singh83@gmail.com">✉️ dharmender.singh83@gmail.com</a>
+                    <a class="btn btn-secondary" href="https://www.linkedin.com/in/dhsinghnavish" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <small>&copy; 2026 Dharmender Singh</small>
+            <ul class="footer-links">
+                <li><a href="tel:+919740906000">📞 +91 97409 06000</a></li>
+                <li><a href="mailto:dharmender.singh83@gmail.com">Email</a></li>
+                <li><a href="https://www.linkedin.com/in/dhsinghnavish" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/drsradioactive" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

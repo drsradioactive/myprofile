@@ -3,109 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dharmender Singh</title>
+    <title>SRE &amp; Reliability — Dharmender Singh</title>
+    <meta name="description" content="AI-driven root cause analysis, ML-based incident prevention, and microservices resiliency at enterprise scale.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%230b1f3a'/%3E%3Ctext x='32' y='42' font-family='Arial' font-size='26' font-weight='700' fill='%232dd4bf' text-anchor='middle'%3EDS%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header, nav, footer {
-            text-align: center;
-            padding: 1em;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
-            position: relative;
-        }
-        nav ul li ul {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: white;
-            padding: 10px;
-            list-style-type: none;
-            border: 1px solid #ccc;
-            z-index: 1000;
-            white-space: nowrap; /* Ensure the sub-menu items are on a single line */
-        }
-        nav ul li:hover ul {
-            display: flex; /* Use flexbox to align items horizontally */
-            justify-content: center;
-        }
-        nav ul li ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 1em;
-        }
-        @media (max-width: 600px) {
-            nav ul li {
-                display: block;
-                margin: 10px 0;
-            }
-            nav ul li ul {
-                position: static;
-                display: flex; /* Ensure the sub-menu items are flex items */
-                flex-direction: column; /* Stack sub-menu items vertically on small screens */
-            }
-            .container {
-                padding: 0.5em;
-            }
-        }
-    </style>
 </head>
 <body>
-    <header>
-        <h1>Dharmender Singh</h1>
-        <p>📞 9740906000 | <a href="https://www.linkedin.com/in/dhsinghnavish" target="_blank">LinkedIn</a> | <a href="https://github.com/drsradioactive" target="_blank">GitHub</a> | 📧 <a href="mailto:dharmender.singh83@gmail.com" target="_blank">Email</a> </p>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="home.html">About Me</a></li>
-            <li>
-                <a href="#">Projects</a> <!-- Removed /Projects.html from the URL -->
+    <header class="site-header">
+        <div class="nav-inner">
+            <a class="brand" href="home.html">
+                <span class="brand-mark">DS</span>
+                <span class="brand-text">Dharmender Singh</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="site-nav" id="siteNav">
                 <ul>
-                    <li><a href="AIML.html">AIML</a></li>
-                    <li><a href="Cloud.html">Cloud Migration</a></li>
-                    <li><a href="DataEngg.html">Data Engineering and Analytics</a></li>
-                    <li><a href="Blockchain.html">Blockchain</a></li>
-                    <li><a href="Mainframe.html">Mainframe Modernization</a></li>
-                    <li><a href="SRE.html">SRE</a></li>
+                    <li><a href="home.html">About</a></li>
+                    <li><a href="resume.html">Experience</a></li>
+                    <li>
+                        <details>
+                            <summary>Projects</summary>
+                            <ul class="dropdown">
+                                <li><a href="Cloud.html">Cloud Migration</a></li>
+                                <li><a href="DataEngg.html">Data Engineering</a></li>
+                                <li><a href="Mainframe.html">Mainframe Modernization</a></li>
+                                <li><a class="active" href="SRE.html">SRE &amp; Reliability</a></li>
+                                <li><a href="AIML.html">AI / ML</a></li>
+                                <li><a href="Blockchain.html">Blockchain (Coursework)</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li><a href="Skills.html">Skills</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="certification.html">Certifications</a></li>
+                    <li><a href="books.html">Books</a></li>
                 </ul>
-            </li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="certification.html">Certification</a></li>
-            <li><a href="Skills.html">Skills</a></li>
-            <li><a href="books.html">Books</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        <p>👋 Hi there! </p>
-        <p> I'm an experienced data engineer and analytics professional, with a strong background in Data pipeline creation, optimization, statistical modeling, data visualization, and machine learning. Proficient in SAS, Python, and Azure cloud solutions. A passion for team leadership and mentoring, fostering innovation, and delivering impactful solutions using data to drive business decisions.</p>
-        <p>My passion lies in leveraging data to drive <strong>impactful solutions</strong> that shape business decisions. Here's what I bring to the table: </p>
-        <ul>
-            <li><strong>Data Engineering and Analytics:</strong> I specialize in creating robust data pipelines, optimizing processes, and building statistical models.</li>
-            <li><strong>Visualization Mastery:</strong> I transform complex data into clear insights through compelling visualizations.</li>
-            <li><strong>Machine Learning Enthusiast:</strong> I love exploring machine learning algorithms and applying them to real-world problems.</li>
-            <li><strong>Tech Stack:</strong> Proficient in <strong>SAS</strong>, <strong>Python</strong>, and <strong>Azure cloud solutions</strong>.</li>
-            <li><strong>Leadership and Mentorship:</strong> I thrive on fostering innovation within teams and mentoring aspiring data professionals.</li>
-        </ul>
-        <a href="https://github.com/drsradioactive/Resume/blob/main/Dharmender%20Singh_Data_Engg_Exp_17_Years_SAS_Azure_Mainframe%20Modernization.docx.pdf" target="_blank">Resume</a>
-        <p>Let's connect (📞 +91-9740906000 or dharmender.singh83@gmail.com) and make data work for you!  🚀</p>
-    </div>
-    <footer>
-        &copy; 2024 Dharmender Singh
+            </nav>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <span class="eyebrow" style="color:var(--teal-600)">Project Area</span>
+            <h1>🔧 Site Reliability &amp; Platform Resiliency</h1>
+            <p class="muted">Catching failures before they become incidents — with AI-assisted RCA, predictive monitoring, and disciplined operational governance.</p>
+
+            <div class="card-grid">
+                <div class="project-card">
+                    <h3>Mission-Critical API Resiliency</h3>
+                    <p>Improved the stability and resiliency of mission-critical APIs supporting more than 300 million hits per day, rebuilding and scaling infrastructure on AKS to deliver meaningfully better fault tolerance for regulated, high-volume workloads.</p>
+                    <ul class="chip-list">
+                        <li class="chip">AKS</li><li class="chip">Fault Tolerance</li><li class="chip">API Reliability</li>
+                    </ul>
+                </div>
+                <div class="project-card">
+                    <h3>AI-Driven Root Cause Analysis</h3>
+                    <p>Enabled 5-minute root cause analysis for production incidents using AI, Splunk logs, and Datadog tracing, cutting the time engineers spent triaging incidents and accelerating remediation across the platform.</p>
+                    <ul class="chip-list">
+                        <li class="chip">Datadog</li><li class="chip">Splunk</li><li class="chip">AI-Assisted RCA</li>
+                    </ul>
+                </div>
+                <div class="project-card">
+                    <h3>ML-Based Incident Prevention</h3>
+                    <p>Applied machine learning to detect anomalies and pipeline failures before they became incidents — reducing data pipeline failures by 40 percent, cutting overall incident rates by roughly 15 percent, improving MTTR by 20 percent, and powering fraud alerting.</p>
+                    <ul class="chip-list">
+                        <li class="chip">Machine Learning</li><li class="chip">Anomaly Detection</li><li class="chip">Predictive Monitoring</li>
+                    </ul>
+                </div>
+                <div class="project-card">
+                    <h3>Disaster Recovery &amp; Incident Reduction</h3>
+                    <p>Reduced MTTR for disaster recovery activities by 60 percent across 100+ Azure applications and reduced overall production incidents by 50 percent through AI-led operational practices and architecture governance.</p>
+                    <ul class="chip-list">
+                        <li class="chip">Disaster Recovery</li><li class="chip">Azure Cloud</li><li class="chip">Operational Governance</li>
+                    </ul>
+                </div>
+                <div class="project-card">
+                    <h3>Microservices Resiliency</h3>
+                    <p>Improved microservices resiliency using rule-based systems, classical AI, and LLM-informed operational intelligence, alongside RBAC, controls, and performance-testing initiatives across organizational platforms.</p>
+                    <ul class="chip-list">
+                        <li class="chip">Microservices</li><li class="chip">GenAI</li><li class="chip">RBAC</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="muted" style="margin-top:1.5rem">Related certification: AI-102 (Designing and Implementing a Microsoft Azure AI Solution).</p>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <small>&copy; 2026 Dharmender Singh</small>
+            <ul class="footer-links">
+                <li><a href="tel:+919740906000">📞 +91 97409 06000</a></li>
+                <li><a href="mailto:dharmender.singh83@gmail.com">Email</a></li>
+                <li><a href="https://www.linkedin.com/in/dhsinghnavish" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/drsradioactive" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

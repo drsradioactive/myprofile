@@ -3,72 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dharmender Singh</title>
+    <title>Experience — Dharmender Singh</title>
+    <meta name="description" content="20 years of engineering leadership across mainframe, cloud, and data platform modernization at Fidelity Investments and IBM.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%230b1f3a'/%3E%3Ctext x='32' y='42' font-family='Arial' font-size='26' font-weight='700' fill='%232dd4bf' text-anchor='middle'%3EDS%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header, nav, footer {
-            text-align: center;
-            padding: 1em;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 1em;
-        }
-        @media (max-width: 600px) {
-            nav ul li {
-                display: block;
-                margin: 10px 0;
-            }
-            .container {
-                padding: 0.5em;
-            }
-        }
-    </style>
 </head>
 <body>
-    <header>
-        <h1>Dharmender Singh</h1>
-        <p>📞 9740906000 | <a href="https://www.linkedin.com/in/dhsinghnavish" target="_blank">LinkedIn</a> | <a href="https://github.com/drsradioactive" target="_blank">GitHub</a> | 📧 <a href="mailto:dharmender.singh83@gmail.com" target="_blank">Email</a> </p>
+    <header class="site-header">
+        <div class="nav-inner">
+            <a class="brand" href="home.html">
+                <span class="brand-mark">DS</span>
+                <span class="brand-text">Dharmender Singh</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="site-nav" id="siteNav">
+                <ul>
+                    <li><a href="home.html">About</a></li>
+                    <li><a class="active" href="resume.html">Experience</a></li>
+                    <li>
+                        <details>
+                            <summary>Projects</summary>
+                            <ul class="dropdown">
+                                <li><a href="Cloud.html">Cloud Migration</a></li>
+                                <li><a href="DataEngg.html">Data Engineering</a></li>
+                                <li><a href="Mainframe.html">Mainframe Modernization</a></li>
+                                <li><a href="SRE.html">SRE &amp; Reliability</a></li>
+                                <li><a href="AIML.html">AI / ML</a></li>
+                                <li><a href="Blockchain.html">Blockchain (Coursework)</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li><a href="Skills.html">Skills</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="certification.html">Certifications</a></li>
+                    <li><a href="books.html">Books</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="resume.html">Projects</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="certification.html">Certification</a></li>
-            <li><a href="books.html">Books</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        <p>👋 Hi there! </p>
-        <p> I'm an experienced data engineer and analytics professional, with a strong background in Data pipeline creation,optimization, statistical modeling, data visualization, and machine learning. Proficient in SAS, Python, andAzure cloud solutions. A passion for team leadership and mentoring, fostering innovation, and delivering impactful solutions using data to drive business decisions.</p>
-        <p>My passion lies in leveraging data to drive <strong>impactful solutions</strong> that shape business decisions. Here's what I bring to the table: </p>
-        <ul>
-            <li><strong>Data Engineering and Analytics:</strong> I specialize in creating robust data pipelines, optimizing processes, and building statistical models.</li>
-            <li><strong>Visualization Mastery:</strong> I transform complex data into clear insights through compelling visualizations.</li>
-            <li><strong>Machine Learning Enthusiast:</strong> I love exploring machine learning algorithms and applying them to real-world problems.</li>
-            <li><strong>Tech Stack:</strong> Proficient in <strong>SAS</strong>, <strong>Python</strong>, and <strong>Azure cloud solutions</strong>.</li>
-            <li><strong>Leadership and Mentorship:</strong> I thrive on fostering innovation within teams and mentoring aspiring data professionals.</li>
-        </ul>
-        <a href="https://github.com/drsradioactive/Resume/blob/main/Dharmender%20Singh_Data_Engg_Exp_17_Years_SAS_Azure_Mainframe%20Modernization.docx.pdf" target="_blank">>Resume</a>
-        <p>Let's connect (📞 +91-9740906000 or dharmender.singh83@gmail.com) and make data work for you!  🚀</p>
-    </div>
-    <footer>
-        &copy; 2024 Dharmender Singh
+
+    <section class="section">
+        <div class="container">
+            <span class="eyebrow" style="color:var(--teal-600)">Career</span>
+            <h1>Professional Experience</h1>
+            <p class="muted">20 years, one employer's worth of transformation, and a full-circle view: I built these mainframe systems early in my career, and I'm now the one modernizing them.</p>
+
+            <div class="download-banner">
+                <p>📄 Want the one-page version?</p>
+                <a class="btn btn-primary" href="Dharmender_Singh_Resume.pdf" target="_blank">Download Full Resume (PDF)</a>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-role"><h3>Senior Engineering Manager</h3><span class="dates">Jun 2025 – Present</span></div>
+                    <div class="timeline-company">Fidelity Investments</div>
+                    <ul>
+                        <li>Improved stability and resiliency of mission-critical APIs supporting more than 300 million hits per day.</li>
+                        <li>Led engineering initiatives to modernize recordkeeping databases on Oracle in Azure Cloud.</li>
+                        <li>Directed a multi-year migration of customer data from legacy mainframe platforms to distributed Oracle MDM architecture.</li>
+                        <li>Advanced platform stability and service reliability through modernization, architecture governance, and enterprise-scale execution.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-role"><h3>Principal Software Engineer</h3><span class="dates">Jan 2022 – May 2025</span></div>
+                    <div class="timeline-company">Fidelity Investments</div>
+                    <ul>
+                        <li>Built and led a 15-member engineering team supporting Azure migration, operational runbooks, and platform enablement.</li>
+                        <li>Spearheaded a self-service reporting and analytics platform serving 15,000 monthly requests from 3,000+ business users using Power Apps, Node.js, and SAS.</li>
+                        <li>Led migration of 5,000 SAS programs to SAS EG 7.1, generating annual savings of approximately $1M.</li>
+                        <li>Reduced MTTR for disaster recovery activities by 60 percent across 100+ Azure applications.</li>
+                        <li>Enabled 5-minute root cause analysis for production incidents using AI, Splunk logs, and Datadog tracing.</li>
+                        <li>Applied machine learning to reduce data pipeline failures by 40 percent and improve MTTR by 20 percent.</li>
+                        <li>Managed highly regulated data operations supporting $4.5T in assets, 65K funds, and 24K clients.</li>
+                        <li>Strengthened enterprise Azure adoption through strategic partnerships and delivered 4.8 CSAT twice.</li>
+                        <li>Mentored 25+ engineers and practitioners in Azure Cloud, driving internal mobility and capability growth.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-role"><h3>Project Manager</h3><span class="dates">Jan 2019 – Dec 2021</span></div>
+                    <div class="timeline-company">Fidelity Investments</div>
+                    <ul>
+                        <li>Managed a global engineering team of 11 members across India and the US.</li>
+                        <li>Oversaw a batch ecosystem of 15,000 ETL jobs while maintaining SLA adherence and improving runtime by 10 percent.</li>
+                        <li>Delivered self-service data pipeline solutions that saved 160 man-hours per day while serving 160K unique users.</li>
+                        <li>Conducted Azure enablement and training programs for 40 engineers to accelerate cloud adoption.</li>
+                        <li>Achieved more than 100 percent compliance coverage for 24K clients through automated data masking and refresh controls in non-production environments.</li>
+                        <li>Led RBAC, controls, and performance-testing aligned initiatives across organizational platforms.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-role"><h3>Lead Software Engineer</h3><span class="dates">Jan 2016 – Dec 2018</span></div>
+                    <div class="timeline-company">Fidelity Investments</div>
+                    <ul>
+                        <li>Delivered data solutions supporting 24K clients and 32.2 million participants.</li>
+                        <li>Reduced turnaround time by 99 percent while delivering 500 reports to 3,000 users across the enterprise.</li>
+                        <li>Designed end-to-end strategies to migrate 16K mainframe jobs to modernized infrastructure.</li>
+                        <li>Conducted technical training for 30 team members on Control-M and SAS/SQL.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-role"><h3>Senior Software Engineer</h3><span class="dates">Jul 2012 – Dec 2015</span></div>
+                    <div class="timeline-company">Fidelity Investments</div>
+                    <ul>
+                        <li>Automated 500 recurring reports using Control-M orchestration and a custom customer-facing UI.</li>
+                        <li>Delivered advanced SAS-based analytics and reporting solutions for business operations.</li>
+                        <li>Trained 30 team members on SAS programming and operational best practices.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-role"><h3>Software Engineer</h3><span class="dates">Aug 2010 – Jun 2012</span></div>
+                    <div class="timeline-company">Fidelity Investments</div>
+                    <ul>
+                        <li>Established a 6-member SAS programming team to deliver data-driven solutions.</li>
+                        <li>Modernized Base SAS implementations into advanced SAS macro-based solutions.</li>
+                        <li>Delivered data products using SAS stored procedures, ODS, and HTML-based interfaces.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-role"><h3>Software Engineer</h3><span class="dates">Feb 2007 – Aug 2010</span></div>
+                    <div class="timeline-company">IBM</div>
+                    <ul>
+                        <li>Architected and delivered data-driven solutions using advanced SAS.</li>
+                        <li>Led fund go-live processes and supported successful production launches.</li>
+                        <li>Supported mainframe production batch environments across COBOL and SAS workloads.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section-title" style="margin-top:2.5rem">
+                <h2>Selected Leadership Achievements</h2>
+            </div>
+            <ul class="highlight-list">
+                <li>Directed mainframe workload modernization and migration initiatives, helping transition legacy processing to scalable modern platforms.</li>
+                <li>Reduced production incidents by 50 percent and improved platform resiliency and stability through AI-led operational practices.</li>
+                <li>Enabled Azure Cloud adoption across the enterprise through engineering leadership, training, migration support, and stakeholder alignment.</li>
+                <li>Led RBAC, controls, and performance testing initiatives across organizational platforms.</li>
+                <li>Improved microservices resiliency using rule-based systems, classical AI, and LLM-informed operational intelligence.</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <small>&copy; 2026 Dharmender Singh</small>
+            <ul class="footer-links">
+                <li><a href="tel:+919740906000">📞 +91 97409 06000</a></li>
+                <li><a href="mailto:dharmender.singh83@gmail.com">Email</a></li>
+                <li><a href="https://www.linkedin.com/in/dhsinghnavish" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/drsradioactive" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

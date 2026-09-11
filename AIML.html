@@ -3,176 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dharmender Singh</title>
+    <title>AI / ML Projects — Dharmender Singh</title>
+    <meta name="description" content="Hands-on machine learning and deep learning coursework: computer vision, NLP, and classification projects.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%230b1f3a'/%3E%3Ctext x='32' y='42' font-family='Arial' font-size='26' font-weight='700' fill='%232dd4bf' text-anchor='middle'%3EDS%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            overflow: hidden; /* Prevent the body from scrolling */
-        }
-        header, nav, footer {
-            text-align: center;
-            padding: 1em;
-            flex-shrink: 0;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
-            position: relative;
-        }
-        nav ul li ul {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: white;
-            padding: 10px;
-            list-style-type: none;
-            border: 1px solid #ccc;
-            z-index: 1000;
-            white-space: nowrap;
-        }
-        nav ul li:hover ul {
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-        .content {
-            max-width: 80%;
-            margin: 0 auto;
-            padding: 1em;
-            padding-bottom: 3em; /* Add padding to the bottom */
-            height: calc(100vh - 140px); /* Adjust height based on header and footer height */
-            overflow-y: auto; /* Enable vertical scrolling */
-        }
-        .centered-heading {
-            text-align: center;
-            font-weight: bold;
-            color: gray;
-        }
-        footer {
-            text-align: center;
-            padding: 1em;
-            flex-shrink: 0;
-        }
-        @media (max-width: 600px) {
-            nav ul li {
-                display: block;
-                margin: 10px 0;
-            }
-            nav ul li ul {
-                position: static;
-                display: flex;
-                flex-direction: column;
-            }
-            .content {
-                padding: 0.5em;
-                padding-bottom: 3em; /* Add padding to the bottom for small screens */
-            }
-        }
-    </style>
 </head>
 <body>
-    <header>
-        <h1>Dharmender Singh</h1>
-        <p>📞 9740906000 | <a href="https://www.linkedin.com/in/dhsinghnavish" target="_blank">LinkedIn</a> | <a href="https://github.com/drsradioactive" target="_blank">GitHub</a> | 📧 <a href="mailto:dharmender.singh83@gmail.com" target="_blank">Email</a> </p>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="home.html">About Me</a></li>
-            <li>
-                <a href="#">Projects</a>
+    <header class="site-header">
+        <div class="nav-inner">
+            <a class="brand" href="home.html">
+                <span class="brand-mark">DS</span>
+                <span class="brand-text">Dharmender Singh</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="site-nav" id="siteNav">
                 <ul>
-                    <li><a href="AIML.html">AIML</a></li>
-                    <li><a href="Cloud.html">Cloud Migration</a></li>
-                    <li><a href="DataEngg.html">Data Engineering and Analytics</a></li>
-                    <li><a href="Blockchain.html">Blockchain</a></li>
-                    <li><a href="Mainframe.html">Mainframe Modernization</a></li>
-                    <li><a href="SRE.html">SRE</a></li>
+                    <li><a href="home.html">About</a></li>
+                    <li><a href="resume.html">Experience</a></li>
+                    <li>
+                        <details>
+                            <summary>Projects</summary>
+                            <ul class="dropdown">
+                                <li><a href="Cloud.html">Cloud Migration</a></li>
+                                <li><a href="DataEngg.html">Data Engineering</a></li>
+                                <li><a href="Mainframe.html">Mainframe Modernization</a></li>
+                                <li><a href="SRE.html">SRE &amp; Reliability</a></li>
+                                <li><a class="active" href="AIML.html">AI / ML</a></li>
+                                <li><a href="Blockchain.html">Blockchain (Coursework)</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li><a href="Skills.html">Skills</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="certification.html">Certifications</a></li>
+                    <li><a href="books.html">Books</a></li>
                 </ul>
-            </li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="certification.html">Certification</a></li>
-            <li><a href="Skills.html">Skills</a></li>
-            <li><a href="books.html">Books</a></li>
-        </ul>
-    </nav>
-    <div class="content">
-        <p class="centered-heading">👋 AIML Projects </p>   
-        <ul>
-            <li><strong>Project : Face Mask Prediction using U-Net, Advanced Computer Vision:</strong></li>
-            <p>The goal is to build a deep learning model using U-Net as architecture that will learn the pixel mapping of the face in an image.</p>
-            <p><strong>Skills & Tools Covered:</strong> Computer Vision, CNN, Transfer Learning, Object Detection & Segmentation</p>
-            <a href="https://github.com/drsradioactive/Machine-Learning-and-Deep-Learning/blob/main/README.md" target="_blank">Project Code</a>
+            </nav>
+        </div>
+    </header>
 
-            <li><strong>Project : Sentiment Analysis using Sequence Models in NLP:</strong></li>
-            <p>The objective of this project is to build a text classification model which analyzes the customer's sentiments based on their reviews in the IMDB database.
-               The model uses a complex deep learning model to build an embedding layer followed by a classification algorithm to analyze the sentiment of the customers.</p>
-            <p><strong>Skills & Tools Covered:</strong> RNN, Word Embedding, LSTM, Classification</p>
-            <a href="https://github.com/drsradioactive/Machine-Learning-and-Deep-Learning/blob/main/README.md" target="_blank">Project Code</a>
+    <section class="section">
+        <div class="container">
+            <span class="eyebrow" style="color:var(--teal-600)">Project Area</span>
+            <h1>🤖 AI / ML Projects</h1>
+            <p class="muted">Hands-on machine learning and deep learning coursework, applying the modeling techniques I now use for AI-assisted RCA and anomaly detection in production platforms.</p>
 
-            <li><strong>Project : Predicting Author Features using an NLP Classifier, Statistical NLP:</strong></li>
-            <p>The project involves building an NLP classifier that predicts multiple features of the author of a given text.
-               This is a multi-label classification problem that can predict the labels of the blog based on the given input text, and also build a semi-rule-based interactive chatbot.</p>
-            <p><strong>Skills & Tools Covered:</strong> Multi-label Classification, Natural Language Processing, Chatbot</p>
-            <a href="https://github.com/drsradioactive/Machine-Learning-and-Deep-Learning/blob/main/README.md" target="_blank">Project Code</a>
+            <div class="card-grid">
+                <div class="project-card">
+                    <h3>Face Mask Prediction using U-Net</h3>
+                    <p>Built a deep learning model using U-Net architecture to learn the pixel mapping of a face in an image.</p>
+                    <ul class="chip-list">
+                        <li class="chip">Computer Vision</li><li class="chip">CNN</li><li class="chip">Transfer Learning</li><li class="chip">Segmentation</li>
+                    </ul>
+                    <a class="card-link" href="https://github.com/drsradioactive/Machine-Learning-and-Deep-Learning/blob/main/README.md" target="_blank">View Project Code ↗</a>
+                </div>
+                <div class="project-card">
+                    <h3>Sentiment Analysis using Sequence Models</h3>
+                    <p>Built a text classification model that analyzes customer sentiment from IMDB reviews, using an embedding layer followed by a classification algorithm.</p>
+                    <ul class="chip-list">
+                        <li class="chip">RNN</li><li class="chip">Word Embedding</li><li class="chip">LSTM</li><li class="chip">Classification</li>
+                    </ul>
+                    <a class="card-link" href="https://github.com/drsradioactive/Machine-Learning-and-Deep-Learning/blob/main/README.md" target="_blank">View Project Code ↗</a>
+                </div>
+                <div class="project-card">
+                    <h3>Predicting Author Features using an NLP Classifier</h3>
+                    <p>Built a multi-label NLP classifier that predicts multiple features of a text's author, and a semi-rule-based interactive chatbot on top of it.</p>
+                    <ul class="chip-list">
+                        <li class="chip">Multi-Label Classification</li><li class="chip">NLP</li><li class="chip">Chatbot</li>
+                    </ul>
+                    <a class="card-link" href="https://github.com/drsradioactive/Machine-Learning-and-Deep-Learning/blob/main/README.md" target="_blank">View Project Code ↗</a>
+                </div>
+                <div class="project-card">
+                    <h3>Predicting Plant Species using CNN</h3>
+                    <p>Built a CNN classifier to identify plant/crop seedling species and examined why CNNs outperform standard NNs for image datasets.</p>
+                    <ul class="chip-list">
+                        <li class="chip">Convolutional Neural Networks</li><li class="chip">Keras</li><li class="chip">Computer Vision</li>
+                    </ul>
+                    <a class="card-link" href="https://github.com/drsradioactive/Machine-Learning-and-Deep-Learning/blob/main/README.md" target="_blank">View Project Code ↗</a>
+                </div>
+                <div class="project-card">
+                    <h3>Street View House Number Classification</h3>
+                    <p>Implemented an image classification pipeline based on k-Nearest Neighbour and a deep neural network on the SVHN dataset — house numbers captured from Google Street View images.</p>
+                    <ul class="chip-list">
+                        <li class="chip">Neural Networks</li><li class="chip">Deep Learning</li><li class="chip">Keras</li><li class="chip">Image Recognition</li>
+                    </ul>
+                    <a class="card-link" href="https://github.com/drsradioactive/Machine-Learning-and-Deep-Learning/blob/main/README.md" target="_blank">View Project Code ↗</a>
+                </div>
+                <div class="project-card">
+                    <h3>Bank Customer Churn Modelling</h3>
+                    <p>Built an ANN-based churn model (Kaggle) to determine whether bank customers will continue using their service, analyzing the relationship between churn and multiple independent variables, with recommendations for service improvements.</p>
+                    <ul class="chip-list">
+                        <li class="chip">Neural Networks</li><li class="chip">Classification</li><li class="chip">Keras</li><li class="chip">TensorFlow</li>
+                    </ul>
+                    <a class="card-link" href="https://github.com/drsradioactive/Machine-Learning-and-Deep-Learning/blob/main/README.md" target="_blank">View Project Code ↗</a>
+                </div>
+                <div class="project-card">
+                    <h3>Classifying Silhouettes of Vehicles</h3>
+                    <p>Classified vehicles into types based on silhouettes viewed from multiple angles, using PCA to reduce dimensionality and SVM for classification.</p>
+                    <ul class="chip-list">
+                        <li class="chip">Support Vector Machines</li><li class="chip">PCA</li><li class="chip">Unsupervised Learning</li>
+                    </ul>
+                    <a class="card-link" href="https://github.com/drsradioactive/Machine-Learning-and-Deep-Learning/blob/main/README.md" target="_blank">View Project Code ↗</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <li><strong>Project : Predicting Plant Species using CNN, Computer Vision with CNNs:</strong></li>
-            <p>The first part of the project involves building a CNN classifier to identify the species of given plant/crop seedlings and discuss why CNNs perform better than NNs for image datasets.
-                The second part involves configuring the image data using given images.</p>
-            <p><strong>Skills & Tools Covered:</strong> Convolution, Neural Network, Keras, Computer Vision</p>
-            <a href="https://github.com/drsradioactive/Machine-Learning-and-Deep-Learning/blob/main/README.md" target="_blank">Project Code</a>
-
-            <li><strong>Project : Implementing an Image Classification Neural Network to Classify Street House View Numbers, Neural Networks & Deep Learning:</strong></li>
-            <p>SVHN is a real-world image dataset for developing object recognition algorithms with a requirement on data formatting but comes from a significantly harder,
-                unsolved, real-world problem (recognizing digits and numbers in natural scene images). SVHN is obtained from house numbers in Google Street View images.
-                The objective of the project is to learn how to implement a simple image classification pipeline based on the k-Nearest Neighbour and a deep neural network.</p>
-            <p><strong>Skills & Tools Covered:</strong> Neural Networks, Deep Learning, Keras, Image Recognition</p>
-            <a href="https://github.com/drsradioactive/Machine-Learning-and-Deep-Learning/blob/main/README.md" target="_blank">Project Code</a>
-            
-            /* New Project */
-            
-            <li><strong>Project :Bank Customer Churn Modelling using Neural Networks ,Neural Networks & Deep Learning</strong></li>
-            <p> This Kaggle project involves building an ANN-based churn model which can determine whether certain bank customers will continue using their service or not. 
-                The ANN model analyzes the relationship between customer churn & multiple independent variables affecting churn.
-                Recommendations for improvements in service were suggested based on the results of the analysis.</p>
-            <p><strong>Skills & Tools Covered:</strong> Neural Networks, Classification, Keras, Tensorflow</p>
-            <a href="https://github.com/drsradioactive/Machine-Learning-and-Deep-Learning/blob/main/README.md" target="_blank">Project Code</a>
-
-            /* New Project */
-            
-            <li><strong>Classifying silhouettes of vehicles , Unsupervised Learning</strong></li>
-            <p> Classified vehicles into different types based on silhouettes which may be viewed from many angles. Used PCA in order to reduce dimensionality and SVM for classification</p>
-            <p><strong>Skills & Tools Covered:</strong> Support Vector Machines, Principal Component Analysis, Classification</p>
-            <a href="https://github.com/drsradioactive/Machine-Learning-and-Deep-Learning/blob/main/README.md" target="_blank">Project Code</a>
-            
-            /* New Project */
-            
-            <li><strong>Bank Customer Churn Modelling using Neural Networks</strong></li>
-            <p> This Kaggle project involves building an ANN-based churn model which can determine whether certain bank customers will continue using their service or not. The ANN model analyzes the relationship between customer churn & multiple independent variables affecting churn. 
-                Recommendations for improvements in service were suggested based on the results of the analysis.</p>
-            <p><strong>Skills & Tools Covered:</strong> Neural Networks, Classification Keras, Tensorflow</p>
-            <a href="https://github.com/drsradioactive/Machine-Learning-and-Deep-Learning/blob/main/README.md" target="_blank">Project Code</a>
-            
-            <p> </p> 
-            <p> </p>
-            <p>A</p>
-            <p>B</p>
-        </ul>
-        <p>Let's connect (📞 +91-9740906000 or dharmender.singh83@gmail.com) and make data work for you! 🚀</p>
-    </div>
-    <footer>
-        &copy; 2024 Dharmender Singh
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <small>&copy; 2026 Dharmender Singh</small>
+            <ul class="footer-links">
+                <li><a href="tel:+919740906000">📞 +91 97409 06000</a></li>
+                <li><a href="mailto:dharmender.singh83@gmail.com">Email</a></li>
+                <li><a href="https://www.linkedin.com/in/dhsinghnavish" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/drsradioactive" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
