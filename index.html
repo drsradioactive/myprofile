@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <div class="scroll-progress"></div>
     <header class="site-header">
         <div class="nav-inner">
             <a class="brand" href="home.html">
@@ -49,51 +50,51 @@
 
     <section class="hero">
         <div class="container">
-            <span class="eyebrow">Engineering &amp; Technology Leader</span>
-            <h1>I modernize the systems regulated industries can't afford to get wrong.</h1>
-            <p class="lede">20+ years turning legacy mainframe and data platforms into resilient, cloud-native systems — without disrupting the business running on top of them.</p>
-            <div class="cta-row">
+            <span class="eyebrow reveal">Engineering &amp; Technology Leader</span>
+            <h1 class="reveal" style="--reveal-delay:0.08s">I modernize the systems regulated industries can't afford to get wrong.</h1>
+            <p class="lede reveal" style="--reveal-delay:0.16s">20+ years turning legacy mainframe and data platforms into resilient, cloud-native systems — without disrupting the business running on top of them.</p>
+            <div class="cta-row reveal" style="--reveal-delay:0.24s">
                 <a class="btn btn-primary" href="Dharmender_Singh_Resume.pdf" target="_blank">📄 Download Resume</a>
                 <a class="btn btn-secondary" href="mailto:dharmender.singh83@gmail.com">✉️ Email Me</a>
                 <a class="btn btn-secondary" href="https://www.linkedin.com/in/dhsinghnavish" target="_blank">LinkedIn</a>
                 <a class="btn btn-secondary" href="https://github.com/drsradioactive" target="_blank">GitHub</a>
             </div>
-            <div class="stat-grid">
-                <div class="stat"><span class="num">20+</span><span class="label">Years in Engineering</span></div>
-                <div class="stat"><span class="num">$4.5T</span><span class="label">Assets Supported</span></div>
-                <div class="stat"><span class="num">300M+</span><span class="label">Daily API Requests</span></div>
-                <div class="stat"><span class="num">40+</span><span class="label">Engineers Led</span></div>
+            <div class="stat-grid reveal" style="--reveal-delay:0.32s">
+                <div class="stat"><span class="num" data-count-to="20" data-suffix="+">0+</span><span class="label">Years in Engineering</span></div>
+                <div class="stat"><span class="num" data-count-to="4.5" data-prefix="$" data-suffix="T" data-decimals="1">$0T</span><span class="label">Assets Supported</span></div>
+                <div class="stat"><span class="num" data-count-to="300" data-suffix="M+">0M+</span><span class="label">Daily API Requests</span></div>
+                <div class="stat"><span class="num" data-count-to="40" data-suffix="+">0+</span><span class="label">Engineers Led</span></div>
             </div>
         </div>
     </section>
 
     <section class="section">
         <div class="container">
-            <div class="section-title">
+            <div class="section-title reveal">
                 <span class="eyebrow" style="color:var(--teal-600)">What I Do</span>
                 <h2>Four pillars of the work</h2>
             </div>
             <div class="feature-grid">
-                <a class="feature-card" href="Cloud.html">
-                    <span class="icon">☁️</span>
+                <a class="feature-card reveal" style="--reveal-delay:0.05s" href="Cloud.html">
+                    <span class="icon-badge">☁️</span>
                     <h3>Cloud &amp; Platform Modernization</h3>
                     <p>Migrating regulated, mission-critical systems to Azure and AKS without breaking what's already running.</p>
                     <span class="go">Explore →</span>
                 </a>
-                <a class="feature-card" href="DataEngg.html">
-                    <span class="icon">📊</span>
+                <a class="feature-card reveal" style="--reveal-delay:0.12s" href="DataEngg.html">
+                    <span class="icon-badge">📊</span>
                     <h3>Data Engineering at Scale</h3>
                     <p>Building self-service data and reporting platforms trusted by thousands of business users.</p>
                     <span class="go">Explore →</span>
                 </a>
-                <a class="feature-card" href="SRE.html">
-                    <span class="icon">🛡️</span>
+                <a class="feature-card reveal" style="--reveal-delay:0.19s" href="SRE.html">
+                    <span class="icon-badge">🛡️</span>
                     <h3>Reliability &amp; AI-Driven Ops</h3>
                     <p>Using ML and automation to catch failures before they become incidents.</p>
                     <span class="go">Explore →</span>
                 </a>
-                <a class="feature-card" href="Mainframe.html">
-                    <span class="icon">🖥️</span>
+                <a class="feature-card reveal" style="--reveal-delay:0.26s" href="Mainframe.html">
+                    <span class="icon-badge">🖥️</span>
                     <h3>Mainframe Modernization</h3>
                     <p>Retiring the legacy systems I once built and ran — into distributed, cloud-native replacements.</p>
                     <span class="go">Explore →</span>
@@ -103,12 +104,58 @@
     </section>
 
     <section class="section section-tight">
+        <div class="container">
+            <div class="section-title reveal">
+                <span class="eyebrow" style="color:var(--teal-600)">Featured Transformation</span>
+                <h2>Retiring 5,000+ SAS programs — with zero disruption</h2>
+            </div>
+            <div class="transform-section reveal">
+                <div class="transform-grid">
+                    <div class="transform-col before">
+                        <span class="transform-tag">Before</span>
+                        <h3 style="margin-bottom:0.5rem;">Legacy mainframe operations</h3>
+                        <ul>
+                            <li><strong>5,000+ SAS programs</strong> and <strong>16,000 batch jobs</strong> running on aging, hard-to-observe infrastructure.</li>
+                            <li>Manual monitoring — failures surfaced after they hit regulated operations.</li>
+                            <li>Every change to critical audit and reporting pipelines carried outage risk.</li>
+                        </ul>
+                    </div>
+                    <div class="transform-arrow" aria-hidden="true">→</div>
+                    <div class="transform-col after">
+                        <span class="transform-tag">After</span>
+                        <h3 style="margin-bottom:0.5rem;">Cloud-native on Azure &amp; AKS</h3>
+                        <ul>
+                            <li>Distributed pipelines on Azure/AKS handling <strong>15,000+ files and requests daily</strong> across partners.</li>
+                            <li>ML-driven anomaly detection catching pipeline failures before they became incidents.</li>
+                            <li>Fully modernized with <strong>zero disruption</strong> to live regulated operations.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="metric-strip">
+                    <div class="metric">
+                        <span class="num" data-count-to="1" data-prefix="$" data-suffix="M+">$0M+</span>
+                        <span class="label">Saved Annually</span>
+                    </div>
+                    <div class="metric">
+                        <span class="num" data-count-to="15" data-suffix="%">0%</span>
+                        <span class="label">Fewer Incidents</span>
+                    </div>
+                    <div class="metric">
+                        <span class="num">Zero</span>
+                        <span class="label">Disruption to Regulated Operations</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-tight">
         <div class="container narrative">
-            <div class="section-title">
+            <div class="section-title reveal">
                 <span class="eyebrow" style="color:var(--teal-600)">My Story</span>
                 <h2>Built it, then modernized it</h2>
             </div>
-            <p>I lead cloud-native and distributed data platforms at Fidelity Investments, supporting operations across <strong>$4.5 trillion in assets</strong>, <strong>65,000 funds</strong>, and <strong>24,000 clients</strong> — with a rare edge: I've also modernized the mainframe systems these platforms replaced, so I understand both what we're building and what we're moving away from.</p>
+            <p class="reveal">I lead cloud-native and distributed data platforms at Fidelity Investments, supporting operations across <strong>$4.5 trillion in assets</strong>, <strong>65,000 funds</strong>, and <strong>24,000 clients</strong> — with a rare edge: I've also modernized the mainframe systems these platforms replaced, so I understand both what we're building and what we're moving away from.</p>
             <p>I lead a global team of <strong>40+ engineers and senior managers</strong>, architecting on AKS and Azure, building distributed data platforms and APIs that serve high-volume, regulated environments, and owning that architecture end-to-end — from strategy through production support.</p>
             <p><strong>A few things I'm proud of:</strong></p>
             <ul class="highlight-list">
@@ -124,7 +171,7 @@
 
     <section class="section">
         <div class="container">
-            <div class="closing-cta">
+            <div class="closing-cta reveal">
                 <h2>Let's connect</h2>
                 <p>Open to conversations with engineering leaders working on distributed platforms, cloud infrastructure, data/fraud analytics, or applied AI in regulated industries.</p>
                 <div class="cta-row" style="justify-content:center">
