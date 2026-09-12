@@ -188,8 +188,9 @@ ul { margin: 0; padding: 0; }
     color: #fff;
 }
 .site-nav a.active {
-    color: var(--navy-900);
-    background: var(--teal-400);
+    color: var(--teal-300);
+    background: rgba(94, 234, 212, 0.14);
+    font-weight: 600;
 }
 
 .site-nav details { position: relative; }
